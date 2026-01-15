@@ -1,23 +1,67 @@
-.high-contrast {
-  background: #000 !important;
+/* HIGH CONTRAST MODE */
+
+.high-contrast,
+.high-contrast body {
+  background-color: #000 !important;
   color: #fff !important;
 }
 
-.high-contrast a {
+/* Override Minima layout containers */
+.high-contrast .site-header,
+.high-contrast .site-footer,
+.high-contrast .page-content,
+.high-contrast .wrapper,
+.high-contrast main,
+.high-contrast header,
+.high-contrast footer,
+.high-contrast section,
+.high-contrast article {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/* Links */
+.high-contrast a,
+.high-contrast a:visited {
   color: #0ff !important;
 }
+
+/* Borders & dividers */
+.high-contrast hr,
+.high-contrast table,
+.high-contrast th,
+.high-contrast td {
+  border-color: #fff !important;
+}
+
+/*    REDUCED MOTION */
 
 .reduced-motion * {
   animation: none !important;
   transition: none !important;
+  scroll-behavior: auto !important;
 }
+
+/* ACCESSIBILITY PANEL*/
 
 #a11y-panel {
   position: fixed;
   bottom: 4rem;
   right: 1rem;
-  background: white;
+  background: #fff;
   border: 1px solid #ccc;
   padding: 0.5rem;
   z-index: 1000;
+}
+
+/* Keep panel readable in high contrast */
+.high-contrast #a11y-panel {
+  background: #111 !important;
+  border-color: #666 !important;
+}
+
+.high-contrast #a11y-panel button {
+  background: #222 !important;
+  color: #fff !important;
+  border: 1px solid #666 !important;
 }
