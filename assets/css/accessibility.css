@@ -1,0 +1,23 @@
+.high-contrast {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.high-contrast a {
+  color: #0ff !important;
+}
+
+.reduced-motion * {
+  animation: none !important;
+  transition: none !important;
+}
+
+#a11y-panel {
+  position: fixed;
+  bottom: 4rem;
+  right: 1rem;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  z-index: 1000;
+}

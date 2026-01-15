@@ -13,7 +13,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Speakers" />
 <script type="application/ld+json">
-{"url":"/speakers/","@type":"WebPage","headline":"Speakers","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"/speakers/","headline":"Speakers","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Robots for Care @ HRI 2026" />
 </head>
@@ -84,38 +84,6 @@
           <p align="center">
             
               <img class="people-pic large-people-pic"
-                   src="/assets/img/speakers/elizabeth.jpg">
-            
-          </p>
-
-          <div class="people-name">
-            
-              <b><a href="https://www.linkedin.com/in/elizabeth-jochum-1a81b75b/" target="_blank">Elizabeth Jochum</a></b>
-            
-            <br>
-
-            
-              Aalborg University and RA Capital
-            
-
-            
-          </div>
-
-          <!-- Speaker bio/content -->
-          <div class="people-name text-center">
-            <!-- Whatever you write below will show up as the speaker's bio -->
-<!-- 
-Elizabeth Jochum is an Associate Professor at Aalborg University and Director of Robotics and Automation at RA Capital. Her work uses the visual and performing arts to rethink how robots and assistive technologies are designed and used. She was named one of the top 50 Women in Robotics by Robohub in 2021. -->
-
-          </div>
-
-        </div>
-      
-        <div class="speaker">
-
-          <p align="center">
-            
-              <img class="people-pic large-people-pic"
                    src="/assets/img/speakers/eduard.jpg">
             
           </p>
@@ -138,6 +106,38 @@ Elizabeth Jochum is an Associate Professor at Aalborg University and Director of
             <!-- Whatever you write below will show up as the speaker's bio -->
 <!-- 
 Dr. Eduard Fosch-Villaronga Ph.D. LL.M M.A. is Associate Professor and Director of Research at eLaw - Center for Law and Digital Technologies at Leiden University (NL). Eduard is an ERC Laureate and investigates the legal and regulatory aspects of robot and AI technologies. -->
+
+          </div>
+
+        </div>
+      
+        <div class="speaker">
+
+          <p align="center">
+            
+              <img class="people-pic large-people-pic"
+                   src="/assets/img/speakers/elizabeth.jpg">
+            
+          </p>
+
+          <div class="people-name">
+            
+              <b><a href="https://www.linkedin.com/in/elizabeth-jochum-1a81b75b/" target="_blank">Elizabeth Jochum</a></b>
+            
+            <br>
+
+            
+              Aalborg University and RA Capital
+            
+
+            
+          </div>
+
+          <!-- Speaker bio/content -->
+          <div class="people-name text-center">
+            <!-- Whatever you write below will show up as the speaker's bio -->
+<!-- 
+Elizabeth Jochum is an Associate Professor at Aalborg University and Director of Robotics and Automation at RA Capital. Her work uses the visual and performing arts to rethink how robots and assistive technologies are designed and used. She was named one of the top 50 Women in Robotics by Robohub in 2021. -->
 
           </div>
 
@@ -268,6 +268,32 @@ Signe Redfield is the Director of Research at the Laboratory for Autonomous Syst
 
   </div>
 
-</footer></body>
+</footer><!-- Accessibility toggle button -->
+    <button
+      id="a11y-toggle"
+      aria-label="Accessibility options"
+      style="
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 1000;
+      "
+    >
+      ♿ Accessibility
+    </button>
+
+    <!-- Accessibility panel -->
+    <div id="a11y-panel" hidden>
+      <button type="button" onclick="setFontSize(1)">A+</button>
+      <button type="button" onclick="setFontSize(-1)">A−</button>
+      <button type="button" onclick="toggleContrast()">High contrast</button>
+      <button type="button" onclick="toggleMotion()">Reduce motion</button>
+    </div>
+
+    <!-- Accessibility assets -->
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+    <script src="/assets/js/accessibility.js"></script>
+
+  </body>
 
 </html>

@@ -13,7 +13,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Robots for Care: Exploring Downstream Socio-Ethical Effects and Upstream Interventions" />
 <script type="application/ld+json">
-{"name":"Robots for Care @ HRI 2026","url":"/","@type":"WebSite","headline":"Robots for Care: Exploring Downstream Socio-Ethical Effects and Upstream Interventions","@context":"https://schema.org"}</script>
+{"name":"Robots for Care @ HRI 2026","@type":"WebSite","url":"/","headline":"Robots for Care: Exploring Downstream Socio-Ethical Effects and Upstream Interventions","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Robots for Care @ HRI 2026" />
 </head>
@@ -164,6 +164,32 @@ We invite participation from those who are interested in the social, ethical, an
 
   </div>
 
-</footer></body>
+</footer><!-- Accessibility toggle button -->
+    <button
+      id="a11y-toggle"
+      aria-label="Accessibility options"
+      style="
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 1000;
+      "
+    >
+      ♿ Accessibility
+    </button>
+
+    <!-- Accessibility panel -->
+    <div id="a11y-panel" hidden>
+      <button type="button" onclick="setFontSize(1)">A+</button>
+      <button type="button" onclick="setFontSize(-1)">A−</button>
+      <button type="button" onclick="toggleContrast()">High contrast</button>
+      <button type="button" onclick="toggleMotion()">Reduce motion</button>
+    </div>
+
+    <!-- Accessibility assets -->
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+    <script src="/assets/js/accessibility.js"></script>
+
+  </body>
 
 </html>
