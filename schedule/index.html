@@ -451,6 +451,8 @@ We plan to have an interactive workshop, with small group ideation activities; i
     <button
       id="a11y-toggle"
       aria-label="Accessibility options"
+      aria-controls="a11y-panel"
+      aria-expanded="false"
       style="
         position: fixed;
         bottom: 1rem;
@@ -462,9 +464,10 @@ We plan to have an interactive workshop, with small group ideation activities; i
     </button>
 
     <!-- Accessibility panel -->
-    <div id="a11y-panel" hidden>
+    <div id="a11y-panel" hidden role="region" aria-label="Accessibility options">
       <button type="button" onclick="setFontSize(1)">A+</button>
       <button type="button" onclick="setFontSize(-1)">A−</button>
+      <button type="button" onclick="resetFontSize()">Reset text</button>
       <button type="button" onclick="toggleContrast()">High contrast</button>
       <button type="button" onclick="toggleMotion()">Reduce motion</button>
     </div>

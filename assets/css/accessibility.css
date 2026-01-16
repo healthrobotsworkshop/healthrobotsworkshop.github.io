@@ -1,3 +1,14 @@
+/*  global A+/A− scaling via html font-size */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
 /* HIGH CONTRAST MODE */
 
 .high-contrast,
@@ -44,15 +55,33 @@
 
 /* ACCESSIBILITY PANEL*/
 
+/* ACCESSIBILITY PANEL */
+
 #a11y-panel {
   position: fixed;
   bottom: 4rem;
   right: 1rem;
+  z-index: 1000;
+
   background: #fff;
   border: 1px solid #ccc;
   padding: 0.5rem;
-  z-index: 1000;
+
+  /* added (recommended) */
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  max-width: 14rem;
 }
+
+#a11y-panel button {
+  display: block;
+  width: 100%;
+  margin: 0.25rem 0;
+  font-size: 1rem;   /* scales with A+/A− */
+  line-height: 1.2;
+  padding: 0.4rem 0.6rem;
+}
+
 
 /* Keep panel readable in high contrast */
 .high-contrast #a11y-panel {

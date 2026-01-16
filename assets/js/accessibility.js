@@ -1,11 +1,18 @@
 const root = document.documentElement;
 
-function setFontSize(delta) {
-  const current = parseFloat(localStorage.getItem("fontScale") || 1);
-  const next = Math.min(Math.max(current + delta * 0.1, 0.8), 1.4);
-  root.style.fontSize = `${next * 100}%`;
-  localStorage.setItem("fontScale", next);
+function setFontSize(direction) {
+  // Store scale as a PERCENT so it’s easier to reason about
+  const MIN = 87.5;   // 14px equivalent
+  const MAX = 125;    // 20px equivalent
+  const STEP = 6.25;  // ~1px step
+
+  const current = parseFloat(localStorage.getItem("fontScale") || "100");
+  const next = Math.max(MIN, Math.min(MAX, current + direction * STEP));
+
+  root.style.fontSize = `${next}%`;
+  localStorage.setItem("fontScale", String(next));
 }
+
 
 function toggleContrast() {
   root.classList.toggle("high-contrast");
@@ -23,13 +30,19 @@ function toggleMotion() {
   );
 }
 
+// document.getElementById("a11y-toggle").onclick = () => {
+//   document.getElementById("a11y-panel").toggleAttribute("hidden");
+// };
 document.getElementById("a11y-toggle").onclick = () => {
-  document.getElementById("a11y-panel").toggleAttribute("hidden");
+  const panel = document.getElementById("a11y-panel");
+  const isHidden = panel.toggleAttribute("hidden"); // returns true if now hidden
+  document.getElementById("a11y-toggle").setAttribute("aria-expanded", String(!isHidden));
 };
+
 
 (() => {
   const scale = localStorage.getItem("fontScale");
-  if (scale) root.style.fontSize = `${scale * 100}%`;
+  if (scale) root.style.fontSize = `${scale}%`;
 
   if (localStorage.getItem("highContrast") === "true") {
     root.classList.add("high-contrast");
@@ -39,3 +52,9 @@ document.getElementById("a11y-toggle").onclick = () => {
     root.classList.add("reduced-motion");
   }
 })();
+
+function resetFontSize() {
+  root.style.fontSize = "100%";
+  localStorage.setItem("fontScale", "100");
+}
+
