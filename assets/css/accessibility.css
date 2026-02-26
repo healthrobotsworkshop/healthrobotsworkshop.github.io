@@ -94,3 +94,48 @@ body {
   color: #fff !important;
   border: 1px solid #666 !important;
 }
+
+/* Papers table (2-column layout) */
+.papers-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+.papers-table tr {
+  border: 1px solid #e6e6e6;
+}
+
+.papers-table td {
+  padding: 1.5rem 1.25rem;
+  vertical-align: middle;
+}
+
+.papers-table .paper-title {
+  width: 60%;
+  font-size: 1.1rem;
+}
+
+.papers-table .paper-title a {
+  text-decoration: none;
+}
+
+.papers-table .paper-title a:hover {
+  text-decoration: underline;
+}
+
+.papers-table .paper-authors {
+  width: 40%;
+  font-size: 1rem;
+}
+
+.papers-table .paper-affil {
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.papers-table .paper-links {
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+}
