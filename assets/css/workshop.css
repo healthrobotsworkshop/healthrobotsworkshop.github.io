@@ -110,3 +110,31 @@ button.disabled:hover {
   transform: none;
   box-shadow: none;
 }
+
+.papers-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.papers-table td {
+  padding: 1.2rem;
+  vertical-align: top;
+  border-bottom: 1px solid #ddd;
+}
+
+.paper-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.paper-authors {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.paper-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  font-weight: 500;
+}
