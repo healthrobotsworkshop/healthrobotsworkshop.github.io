@@ -213,3 +213,26 @@ button.disabled:hover {
   text-align: right;
   vertical-align: top;
 }
+
+/* Keep table columns from stretching weirdly */
+.papers-table {
+  table-layout: fixed;
+}
+
+/* Give left column most of the width */
+.papers-table td.paper-info {
+  width: calc(100% - 170px);
+}
+
+/* Keep links on one line and compact */
+.papers-table td.paper-links {
+  width: 170px;
+  white-space: nowrap;
+  text-align: right;
+  vertical-align: top;
+}
+
+.papers-table td.paper-links a {
+  display: inline-block;
+  margin: 0 0 0 8px; /* left margin only */
+}
