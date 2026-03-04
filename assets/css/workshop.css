@@ -218,6 +218,12 @@ button.disabled:hover {
 .papers-table {
   table-layout: fixed;
   width: 100%;
+  max-width: 980px; 
+  margin: 0 auto;    
+}
+
+.papers-table td {
+  padding: 1.1rem 1.2rem;  
 }
 
 /* Give left column most of the width */
@@ -229,13 +235,14 @@ button.disabled:hover {
 .papers-table td.paper-links {
   width: 32%;
   white-space: nowrap;
-  text-align: right;
-  vertical-align: top;
+  text-align: left;
+  padding-left: 1rem;
+  vertical-align: middle;
 }
 
 .papers-table td.paper-links a {
   display: inline-block;
-  margin: 0 0 0 10px; /* left margin only */
+  margin: 0 10px 0 0;  
 }
 
 .author-name {
