@@ -205,3 +205,11 @@ button.disabled:hover {
   overflow-wrap: normal;
   hyphens: none;
 }
+
+
+.papers-table td.paper-links {
+  width: 170px;           
+  white-space: nowrap;    
+  text-align: right;
+  vertical-align: top;
+}
