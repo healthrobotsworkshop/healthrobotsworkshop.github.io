@@ -139,3 +139,69 @@ button.disabled:hover {
   font-weight: 500;
 }
 
+
+.papers-table,
+.papers-table td,
+.papers-table th,
+.papers-table a,
+.paper-title,
+.paper-authors,
+.paper-links {
+  color: #000 !important; 
+}
+
+.papers-table {
+  font-size: 1.15rem;    
+  line-height: 1.5;
+  width: 100%;
+  border-collapse: separate; 
+  border-spacing: 0;
+}
+
+.papers-table td {
+  padding: 1.25rem 1.4rem;   
+  vertical-align: top;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+
+.paper-title {
+  font-size: 1.25rem;
+  font-weight: 650;
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
+}
+
+
+.paper-authors {
+  font-size: 1.05rem;
+  line-height: 1.45;
+  margin-top: 0.15rem;
+  color: #000 !important;
+}
+
+
+.paper-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: 0.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 0;
+}
+
+.paper-links a:hover {
+  text-decoration: underline;
+}
+
+.paper-type {
+  font-weight: 700;
+  margin-right: 0.5rem;
+  white-space: nowrap; 
+}
+
+.paper-authors {
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+}
