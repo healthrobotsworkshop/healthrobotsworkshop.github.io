@@ -228,12 +228,12 @@ button.disabled:hover {
 
 /* Give left column most of the width */
 .papers-table td.paper-info {
-  width: 68%;
+  width: 75%;
 }
 
 /* Keep links on one line and compact */
 .papers-table td.paper-links {
-  width: 32%;
+  width: 25%;
   white-space: nowrap;
   text-align: left;
   padding-left: 1rem;
@@ -247,4 +247,16 @@ button.disabled:hover {
 
 .author-name {
   white-space: nowrap;
+}
+
+.paper-authors {
+  font-size: 1.05rem;
+  line-height: 1.35;
+  margin-top: 6px;
+  color: #000;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;      
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
