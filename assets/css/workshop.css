@@ -9,7 +9,7 @@ div.speaker-pic {
 
 div.speaker p.speaker-abstract,
 div.speaker p.speaker-bio {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   line-height: 1.6;
   color: #000;
 }
@@ -33,7 +33,7 @@ div.speaker p.speaker-bio {
 .people-name h6 {
   margin: 4px 0;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   line-height: 1.5;
 }
 
@@ -43,15 +43,16 @@ div.speaker p.speaker-bio {
         max-height: 100px;
     }
     .people-pic {
-        max-width: 65px;
-        max-height: 65px;
+        max-width: 75px;
+        max-height: 75px;
     }
     .people-name {
-        font-size: 13px;
-        line-height: 18px;
+        font-size: 1.2em;
+        line-height: 1.5;
     }
     .people-name h6 {
-        font-size: 9px;
+        font-size: 1.2em;
+        line-height: 1.5;
     }
 }
 
