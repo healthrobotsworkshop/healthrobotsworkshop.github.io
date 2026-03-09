@@ -318,3 +318,20 @@ button.disabled:hover {
 .author-name {
   white-space: nowrap;
 }
+
+.speaker-bio summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #3b5ba9;
+  margin-top: 8px;
+}
+
+.speaker-bio {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.speaker-bio[open] summary {
+  margin-bottom: 10px;
+}
